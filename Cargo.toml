@@ -1,0 +1,12 @@
+[package]
+name = "dma-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m ={ version = "0.7", features = ["critical-section-single-core"]}
+cortex-m-rt = "0.7"
+embedded-dma = "0.2"
+stable_deref_trait = { version = "1.2", default-features = false, features = ["alloc"]}
+emballoc = "0.2"
+panic-abort = "0.3"
